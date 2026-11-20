@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canteen Go</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #fffaf6;
+            color: #292929;
+        }
+
+        /* Navbar */
+        nav {
+            height: 75px;
+            background: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 8%;
+            border-bottom: 1px solid #eee;
+        }
+
+        .logo {
+            font-size: 23px;
+            font-weight: bold;
+        }
+
+        .orange {
+            color: #f47721;
+        }
+
+        nav ul {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+        }
+
+        nav ul li a:hover {
+            color: #f47721;
+        }
+
+        .login-btn {
+            background: #f47721;
+            color: white !important;
+            padding: 11px 24px;
+            border-radius: 8px;
+        }
+
+        /* Beranda */
+        .hero {
+            min-height: calc(100vh - 75px);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px 12%;
+            background: linear-gradient(120deg, white 55%, #fff0e5);
+        }
+
+        .hero-text {
+            max-width: 520px;
+        }
+
+        .tagline {
+            color: #f47721;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 18px;
+        }
+
+        .hero-text h1 {
+            font-size: 60px;
+            margin-bottom: 18px;
+            line-height: 1.1;
+        }
+
+        .hero-text h1 span {
+            color: #f47721;
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            line-height: 1.7;
+            color: #666;
+            margin-bottom: 28px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #f47721;
+            color: white;
+            text-decoration: none;
+            padding: 14px 26px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #d96112;
+        }
+
+        .hero-image {
+            background: white;
+            padding: 35px;
+            border-radius: 25px;
+            font-size: 115px;
+            text-align: center;
+            box-shadow: 0 8px 30px #00000010;
+        }
+
+        .info {
+            display: flex;
+            gap: 25px;
+            margin-top: 35px;
+            color: #777;
+            font-size: 13px;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                padding: 0 20px;
+            }
+
+            nav ul {
+                gap: 12px;
+            }
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                justify-content: center;
+                padding: 50px 20px;
+            }
+
+            .hero-text h1 {
+                font-size: 43px;
+            }
+
+            .hero-image {
+                font-size: 75px;
+                margin-top: 40px;
+            }
+
+            .info {
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">
+            🍴 <span class="orange">Canteen</span> Go
+        </div>
+
+        <ul>
+            <li><a href="index.html" class="orange">Beranda</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="#">Tentang</a></li>
+            <li><a href="login.html" class="login-btn">Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- Beranda -->
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <div class="tagline">
+                SELAMAT DATANG DI CANTEEN GO
+            </div>
+
+            <h1>
+                Canteen <span>Go</span>
+            </h1>
+
+            <p>
+                Nikmati kemudahan memesan makanan kantin.
+                Pilih menu favoritmu, pesan secara online,
+                dan nikmati makanan tanpa perlu antre.
+            </p>
+
+            <a href="menu.html" class="btn">
+                Pesan Sekarang →
+            </a>
+
+            <div class="info">
+                <span>✓ Mudah Dipesan</span>
+                <span>✓ Praktis dan Cepat</span>
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+            🍛 🥤 🍜
+        </div>
+
+    </section>
+
+</body>
+</html>

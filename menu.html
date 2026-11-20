@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Canteen Go</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f7f7f7;
+            color: #222;
+        }
+
+        /* Navbar */
+        nav {
+            height: 70px;
+            background: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 60px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .orange {
+            color: #f47721;
+        }
+
+        nav ul {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #222;
+            font-size: 14px;
+        }
+
+        nav ul li a:hover {
+            color: #f47721;
+        }
+
+        /* Judul */
+        .title {
+            text-align: center;
+            margin: 35px 0;
+        }
+
+        .title h1 {
+            font-size: 32px;
+        }
+
+        .line {
+            width: 40px;
+            height: 4px;
+            background: #f47721;
+            margin: 12px auto;
+            border-radius: 5px;
+        }
+
+        /* Daftar Menu */
+        .menu-container {
+            width: 85%;
+            max-width: 1000px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding-bottom: 40px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+        }
+
+        .food-image {
+            width: 100%;
+            height: 140px;
+            overflow: hidden;
+            border-radius: 10px;
+            margin-bottom: 12px;
+        }
+
+        .food-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            color: #f47721;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        button {
+            float: right;
+            background: #f47721;
+            color: white;
+            border: none;
+            padding: 8px 14px;
+            border-radius: 18px;
+            cursor: pointer;
+            margin-top: -25px;
+        }
+
+        button:hover {
+            background: #d96112;
+        }
+
+        @media (max-width: 700px) {
+            nav {
+                padding: 0 20px;
+            }
+
+            nav ul {
+                gap: 12px;
+            }
+
+            .menu-container {
+                grid-template-columns: repeat(2, 1fr);
+                width: 92%;
+            }
+        }
+
+        @media (max-width: 450px) {
+            .menu-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">
+            🍴 <span class="orange">Canteen</span> Go
+        </div>
+
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="menu.html" class="orange">Menu</a></li>
+            <li><a href="#">Tentang</a></li>
+            <li><a href="keranjang.html">🛒</a></li>
+        </ul>
+    </nav>
+
+    <!-- Judul -->
+    <div class="title">
+        <h1>Menu Kantin</h1>
+        <div class="line"></div>
+        <p>Pilih makanan dan minuman favoritmu.</p>
+    </div>
+
+    <!-- Daftar Menu -->
+    <div class="menu-container">
+
+        <div class="card">
+            <div class="food-image">
+                <img src="images/ayam geprek.jpg" alt="Ayam Geprek">
+            </div>
+            <h3>Nasi Ayam Geprek</h3>
+            <p class="price">Rp 15.000</p>
+            <button>Tambah</button>
+        </div>
+
+        <div class="card">
+            <div class="food-image">
+                <img src="images/mie goreng.jpg" alt="Mie Goreng">
+            </div>
+            <h3>Mie Goreng</h3>
+            <p class="price">Rp 12.000</p>
+            <button>Tambah</button>
+        </div>
+
+        <div class="card">
+            <div class="food-image">
+                <img src="images/bakso.jpeg" alt="Bakso">
+            </div>
+            <h3>Bakso</h3>
+            <p class="price">Rp 13.000</p>
+            <button>Tambah</button>
+        </div>
+
+        <div class="card">
+            <div class="food-image">
+                <img src="images/nasi goreng.jpg" alt="Nasi Goreng">
+            </div>
+            <h3>Nasi Goreng</h3>
+            <p class="price">Rp 12.000</p>
+            <button>Tambah</button>
+        </div>
+
+        <div class="card">
+            <div class="food-image">
+                <img src="images/es teh.jpeg" alt="Es Teh Manis">
+            </div>
+            <h3>Es Teh Manis</h3>
+            <p class="price">Rp 5.000</p>
+            <button>Tambah</button>
+        </div>
+
+        <div class="card">
+            <div class="food-image">
+                <img src="images/ES-JERUK-murni.jpg" alt="Es Jeruk">
+            </div>
+            <h3>Es Jeruk</h3>
+            <p class="price">Rp 7.000</p>
+            <button>Tambah</button>
+        </div>
+
+    </div>
+
+</body>
+</html>
